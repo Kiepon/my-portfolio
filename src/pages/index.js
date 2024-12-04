@@ -21,6 +21,7 @@ import { Link } from 'gatsby';
 import AnimatedWords from '../assets/animated';
 
 
+
 const Portfolio = () => {
   return (
       <div className={container}>
