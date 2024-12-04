@@ -1,0 +1,116 @@
+.title {
+    padding-top: 15%;   
+    font-size: 50px;
+    background: -webkit-linear-gradient(left, #d3d3d3, #e0e0e0); /* Светло-серый градиент */
+    background: -o-linear-gradient(right, #d3d3d3, #e0e0e0);
+    background: -moz-linear-gradient(right, #d3d3d3, #e0e0e0);
+    background: linear-gradient(to right, #d3d3d3, #e0e0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.header {
+    font-size: 18px;
+}
+
+.ulAbout {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.ulAbout li {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+}
+
+.ulAbout li:not(:first-child) {
+    margin-top: 1.5%;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    flex-wrap: wrap;
+}
+
+.infoMe {
+    border: 5px solid black;
+    width: 800px;
+    height: auto;
+    box-shadow: 6px 5px 20px 2px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+}
+
+.infoMe:hover {
+    top: -10px;
+}
+
+.listSkills {
+    list-style: none;  
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.skillsHeader {
+    font-size: 45px;
+    padding-left: 5%;
+}
+
+.HeaderAbout {
+    font-size: 45px;
+    padding-left: 5%;
+}
+
+.listSkills li {
+    display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    background-color: grey;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.listSkills li img {
+    padding-right: 5px;
+}
+
+.listSkills li:hover {
+    transition: 0.4s ease;
+    opacity: .7;
+}
+
+
+.myInfo {
+    margin-top: 30%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+}
+
+.linkWork {
+    text-decoration: none;
+    color: white;
+}
+
+.linkWork:hover {
+    opacity: 0.6;
+    transition: 0.5s ease;
+}
+
+.networks {
+    display: flex;
+    align-items: center;
+}
