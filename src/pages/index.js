@@ -16,39 +16,9 @@ import {
   } from '../components/main.module.css';
 import { container } from '../components/layout.module.css';
 import '../components/global.css';
-import { motion } from 'framer-motion';
-import { useState, useEffect } from 'react';
 import images from '../assets/images';
-import { Link } from 'gatsby'
-
-
-const AnimatedWords = () => {
-  const [wordIndex, setWordIndex] = useState(0);
-  const words = ['Python', 'Backend', 'Django'];
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  });
-
-  const variants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { duration: 1.5, ease: "easeInOut" }, color: 'grey' },
-  };
-
-  return (
-    <motion.span
-      key={wordIndex}
-      variants={variants}
-      animate="visible"
-      initial="hidden"
-    >
-      {words[wordIndex]}
-    </motion.span>
-  );
-};
+import { Link } from 'gatsby';
+import AnimatedWords from '../assets/animated';
 
 
 const Portfolio = () => {
@@ -115,7 +85,7 @@ const Portfolio = () => {
             </ul>
           </div>
           <div className={infoMe}>
-              <h2 className={link}><Link to="/works" className={linkWork}>Мои работы</Link></h2>
+              <h2 className={link}><Link to="#" className={linkWork}>Мои работы</Link></h2>
           </div>
         </section>
       </main>

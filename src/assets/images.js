@@ -8,7 +8,7 @@ import django from '../images/django.svg';
 import djangorest from '../images/djangorest.svg';
 import fastapi from '../images/fastapi.svg';
 import git from '../images/git.svg';
-import postgresql from '../images/postgresql.svg';
+import postgresql from '../images/postgre.svg';
 import sqlite from '../images/sqlite.svg';
 import sqlalchemy from '../images/sqlalchemy.svg';
 import mysql from '../images/mysql.svg';
